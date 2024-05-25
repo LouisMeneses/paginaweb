@@ -65,18 +65,21 @@ nav ul li a {
     background-color: #3e8e41;
 }
 
-.servicios-body {
-    background-image: url('images/imagen6.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+#video-header {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+#video-header video {
+    width: 100%;
+    height: auto;
 }
 
 section {
     padding: 20px;
     margin: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+    background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -89,4 +92,30 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
 }
