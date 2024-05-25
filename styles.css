@@ -65,23 +65,20 @@ nav ul li a {
     background-color: #3e8e41;
 }
 
+.servicios-body {
+    background-image: url('images/imagen6.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 section {
     padding: 20px;
     margin: 20px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#video-header {
-    width: 100%;
-    max-height: 500px;
-    overflow: hidden;
-}
-
-#video-header video {
-    width: 100%;
-    height: auto;
 }
 
 footer {
