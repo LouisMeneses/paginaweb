@@ -73,6 +73,17 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+#video-header {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+#video-header video {
+    width: 100%;
+    height: auto;
+}
+
 footer {
     text-align: center;
     padding: 10px 0;
