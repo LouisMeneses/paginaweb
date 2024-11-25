@@ -174,3 +174,41 @@ form button:hover {
     color: #555;
 }
 
+/* Estilo de fondo para la página de Visión */
+.vision-body {
+    background-image: url('images/imagen2.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-attachment: fixed; /* Mantiene la imagen estática al desplazarse */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    display: flex; /* Usado para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    min-height: 100vh; /* Asegura que el contenido ocupe al menos la altura de la pantalla */
+}
+
+/* Caja de contenido centrada */
+.vision-content {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    padding: 30px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el contenedor */
+    max-width: 800px; /* Ancho máximo para evitar que el texto ocupe toda la pantalla */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Estilo del título */
+.vision-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo del párrafo */
+.vision-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+
