@@ -21,7 +21,7 @@ header img {
     max-height: 200px; /* Tamaño adecuado para mantener proporciones del logo */
     height: auto;
     width: auto;
-    margin-bottom: 10px; /* Espaciado entre logo y navegación */
+    margin-bottom: 5px; /* Espaciado entre logo y navegación */
 }
 
 /* Navegación */
