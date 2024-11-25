@@ -11,6 +11,18 @@
     <!-- Encabezado -->
     <header>
         <div class="header-container">
+            <!-- Login en la parte superior izquierda -->
+            <div class="login-container">
+                <form action="login.html" method="post">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username" placeholder="Usuario" required>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                    <button type="submit">Iniciar Sesión</button>
+                </form>
+            </div>
+
+            <!-- Logo y menú de navegación -->
             <img src="images/AUTO3.png" alt="Logo de AutoSolutions Pro" class="logo">
             <nav>
                 <a href="index.html">INICIO</a>
@@ -25,16 +37,16 @@
         </div>
     </header>
 
-    <!-- Video del encabezado -->
-    <section id="video-header">
-        <video autoplay loop muted>
+    <!-- Video del encabezado (más pequeño) -->
+    <section id="video-header" style="height: 300px; overflow: hidden;">
+        <video autoplay loop muted style="width: 100%; height: 100%; object-fit: cover;">
             <source src="videos/video1.mp4" type="video/mp4">
             Tu navegador no soporta el elemento de video.
         </video>
     </section>
 
     <!-- Contenido principal -->
-    <section id="inicio">
+    <section id="inicio" class="main-content">
         <h2>Inicio</h2>
         <p>AUTOSOLUTIONS PRO es tu aliado en el cuidado y mantenimiento de tu vehículo. Ofrecemos una amplia gama de servicios para mantener tu coche en perfecto estado.</p>
     </section>
