@@ -211,4 +211,61 @@ form button:hover {
     color: #555;
 }
 
+/* Estilo de fondo para la página de Políticas de Calidad */
+.politicas-body {
+    background-image: url('images/imagen3.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-attachment: fixed; /* Mantiene la imagen estática al desplazarse */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    display: flex; /* Usado para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    min-height: 100vh; /* Asegura que el contenido ocupe al menos la altura de la pantalla */
+}
+
+/* Caja de contenido */
+.politicas-content {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    padding: 30px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el contenedor */
+    max-width: 800px; /* Ancho máximo para evitar que el texto ocupe toda la pantalla */
+    text-align: left; /* Alinear texto a la izquierda dentro de la caja */
+}
+
+.politicas-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center; /* Centrar título */
+}
+
+.politicas-content ul {
+    list-style-type: disc; /* Listas con viñetas */
+    margin-left: 20px;
+}
+
+.politicas-content li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Botones de navegación en mayúsculas */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Cambiar color al pasar el cursor */
+}
+
 
