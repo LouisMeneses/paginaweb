@@ -7,10 +7,48 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <style>
-        /* Ajustes para el login */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #c9d6df;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .main-content {
+            text-align: center;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
         .login-container {
-            position: relative;
-            margin: 10px auto; /* Centra el contenedor horizontalmente */
+            margin: 20px auto;
             width: 300px;
             background-color: rgba(255, 255, 255, 0.9);
             padding: 15px;
@@ -18,11 +56,13 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             text-align: left;
         }
+
         .login-container form {
             display: flex;
             flex-direction: column;
             gap: 10px;
         }
+
         .login-container input {
             font-size: 1em;
             padding: 5px;
@@ -30,6 +70,7 @@
             border-radius: 3px;
             width: 100%;
         }
+
         .login-container button {
             font-size: 1em;
             padding: 10px;
@@ -40,38 +81,53 @@
             cursor: pointer;
         }
 
-        /* Ajustes para el video */
-        #video-header {
-            height: 200px; /* Hace el video más angosto */
+        #video-section {
+            margin: 20px auto;
+            max-width: 800px;
             overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
-        #video-header video {
+
+        #video-section video {
             width: 100%;
-            height: 100%;
-            object-fit: cover; /* Mantiene las proporciones */
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <!-- Encabezado -->
+    <!-- Header -->
     <header>
-        <div class="header-container">
-            <!-- Logo y menú de navegación -->
-            <img src="images/AUTO3.png" alt="Logo de AutoSolutions Pro" class="logo">
-            <nav>
-                <a href="index.html">INICIO</a>
-                <a href="mision.html">MISION</a>
-                <a href="vision.html">VISION</a>
-                <a href="politicas.html">POLITICAS DE CALIDAD</a>
-                <a href="ubicacion.html">UBICACION</a>
-                <a href="catalogo.html">CATALOGO</a>
-                <a href="contacto.html">CONTACTO</a>
-                <a href="faq.html">PREGUNTAS FRECUENTES</a>
-            </nav>
-        </div>
+        <img src="images/AUTO3.png" alt="Logo de AutoSolutions Pro" class="logo">
+        <nav>
+            <a href="index.html">INICIO</a>
+            <a href="mision.html">MISION</a>
+            <a href="vision.html">VISION</a>
+            <a href="politicas.html">POLITICAS DE CALIDAD</a>
+            <a href="ubicacion.html">UBICACION</a>
+            <a href="catalogo.html">CATALOGO</a>
+            <a href="contacto.html">CONTACTO</a>
+            <a href="faq.html">PREGUNTAS FRECUENTES</a>
+        </nav>
     </header>
 
-    <!-- Login justo debajo del header -->
+    <!-- Main Content -->
+    <section class="main-content">
+        <p>
+            <strong>AUTOSOLUTIONS PRO</strong> es tu aliado en el cuidado y mantenimiento de tu vehículo. 
+            Ofrecemos una amplia gama de servicios para mantener tu coche en perfecto estado.
+        </p>
+    </section>
+
+    <!-- Login Section -->
     <div class="login-container">
         <form action="login.html" method="post">
             <label for="username">Usuario:</label>
@@ -82,29 +138,17 @@
         </form>
     </div>
 
-    <!-- Video del encabezado -->
-    <section id="video-header">
+    <!-- Video Section -->
+    <section id="video-section">
         <video autoplay loop muted>
             <source src="videos/video1.mp4" type="video/mp4">
             Tu navegador no soporta el elemento de video.
         </video>
     </section>
 
-    <!-- Contenido principal -->
-    <section id="inicio" class="main-content">
-        <h2>Inicio</h2>
-        <p>AUTOSOLUTIONS PRO es tu aliado en el cuidado y mantenimiento de tu vehículo. Ofrecemos una amplia gama de servicios para mantener tu coche en perfecto estado.</p>
-    </section>
-
-    <!-- Pie de página -->
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 AutoSolutions Pro. Todos los derechos reservados.</p>
     </footer>
-
-    <!-- Audio de fondo -->
-    <audio autoplay loop>
-        <source src="audios/audio1.mp3" type="audio/mp3">
-        Tu navegador no soporta el elemento de audio.
-    </audio>
 </body>
 </html>
