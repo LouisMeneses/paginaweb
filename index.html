@@ -20,6 +20,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .logo {
@@ -35,6 +36,11 @@
             text-decoration: none;
             color: #333;
             font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #007BFF;
         }
 
         .main-content {
@@ -163,5 +169,11 @@
     <footer>
         <p>&copy; 2024 AutoSolutions Pro. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Audio -->
+    <audio autoplay loop>
+        <source src="audios/audio1.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
 </body>
 </html>
